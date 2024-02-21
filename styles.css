@@ -1,21 +1,75 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh; /* Ensure the body covers the full viewport height */
     margin: 0; /* Remove default margin */
     position: relative; /* Positioning context for the absolute positioning of menu */
     font-family: 'Roboto', sans-serif; /* Apply font-family */
     background-color: #ffffff; /* Light Grey - Neutral Color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul li{
+    display: inline;
+}
+nav {
+    padding: 10px 0; /* Add padding to the top and bottom of the navigation bar */
+    text-align: center; /* Center-align the navigation links */
+}
+.networks{
+    width: 100px;
+}
+.networks ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start;
+    padding:0;
+}
+.networks li{
+    list-style: none;
+    display: block;
+    font-size: 1.5rem;
 }
 
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Add horizontal margin to separate links */
+    transition: color 0.20s ease-out 100ms;
+}
+a {
+    display: inline-block; /* Display the anchor elements as blocks */
+    text-decoration: none;
+    margin: 5px; /* Add margin between the anchor elements */
+    color: #333333; /* Dark Grey - Secondary Color */
+}
+
+nav a:hover {
+    color: #da5c4e; ;
+}
+
+section{
+    width: 100%;
+    max-width: 990px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
 .orange-text {
     color: #da5c4e;
 }
 
 h1, h2 {
-    text-align: center;
+    text-align: left;
     color: #595a5c;
     animation: fadeIn 2s ease-in-out; /* Apply the fadeIn animation with a duration of 2 seconds */
 }
@@ -33,39 +87,12 @@ h1, h2 {
 
 
 .logo {
-    position: absolute; /* Position the logo absolutely */
-    top: 10px; /* Align the logo 10px from the top */
-    right: 10px; /* Align the logo 10px from the right */
+    height: 50px;
 }
 
 h1, h2, nav {
-    text-align: center; /* Center text within their respective containers */
     color: #595a5c;
 }
-
-nav {
-    position: fixed; /* Position the navigation bar */
-    top: 20px; /* Align the navigation bar 20px from the top of the viewport */
-    width: 100%; /* Set the width of the navigation bar to 100% */
-    background-color: #ffffff; /* Set a background color for the navigation bar */
-    padding: 10px 0; /* Add padding to the top and bottom of the navigation bar */
-    text-align: center; /* Center-align the navigation links */
+h1{
+    font-size: 3rem;
 }
-
-nav a {
-    text-decoration: none; /* Remove underline from links */
-    margin: 0 10px; /* Add horizontal margin to separate links */
-    transition: color 0.20s ease-out 100ms;
-}
-
-a {
-    display: inline-block; /* Display the anchor elements as blocks */
-    text-decoration: none;
-    margin: 5px; /* Add margin between the anchor elements */
-    color: #333333; /* Dark Grey - Secondary Color */
-}
-
-nav a:hover {
-    color: #da5c4e; ;
-}
-
